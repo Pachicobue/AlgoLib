@@ -1,7 +1,5 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <utility>
-#endif
+#include <utility>
 template<typename T> constexpr T inverse(const T a, const T mod) { return a == 1 ? T{1} : ((a - inverse(mod % a, a)) * mod + 1) / a; }
 template<typename T> constexpr std::pair<T, T> extgcd(const T a, const T b)  // [x,y] -> ax-by=1
 {

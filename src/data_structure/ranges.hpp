@@ -1,10 +1,8 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <iostream>
-#    include <limits>
-#    include <map>
-#    include <type_traits>
-#endif
+#include <iostream>
+#include <limits>
+#include <map>
+#include <type_traits>
 template<typename T>
 class ranges
 {

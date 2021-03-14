@@ -1,8 +1,6 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <iostream>
-#    include <queue>
-#endif
+#include <iostream>
+#include <queue>
 template<typename T1, typename T2, typename T3>
 std::ostream& operator<<(std::ostream& os, const std::priority_queue<T1, T2, T3>& v)
 {

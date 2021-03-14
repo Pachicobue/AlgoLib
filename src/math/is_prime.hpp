@@ -1,7 +1,5 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <vector>
-#endif
+#include <vector>
 #include "../misc/types.hpp"
 #include "moddint.hpp"
 #include "moddint64.hpp"

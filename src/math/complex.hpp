@@ -1,8 +1,6 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <cmath>
-#    include <iostream>
-#endif
+#include <cmath>
+#include <iostream>
 template<typename T>
 struct complex
 {

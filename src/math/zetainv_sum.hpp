@@ -1,10 +1,8 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <algorithm>
-#    include <cassert>
-#    include <cmath>
-#    include <vector>
-#endif
+#include <algorithm>
+#include <cassert>
+#include <cmath>
+#include <vector>
 #include "../misc/types.hpp"
 template<typename T, typename V>
 class zetainv_sum

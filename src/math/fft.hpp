@@ -1,9 +1,7 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <cassert>
-#    include <cmath>
-#    include <vector>
-#endif
+#include <cassert>
+#include <cmath>
+#include <vector>
 #include "../math/complex.hpp"
 #include "../math/modint.hpp"
 #include "../misc/bit_ops.hpp"

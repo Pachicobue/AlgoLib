@@ -1,7 +1,5 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <vector>
-#endif
+#include <vector>
 #include "mod_pow.hpp"
 template<typename T>
 std::vector<T> garner(const std::vector<T>& xs, const std::vector<T>& ms)

@@ -1,7 +1,5 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <utility>
-#endif
+#include <utility>
 template<typename F> struct fix : F
 {
     fix(F&& f) : F{std::forward<F>(f)} {}

@@ -1,10 +1,8 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <array>
-#    include <cassert>
-#    include <iostream>
-#    include <vector>
-#endif
+#include <array>
+#include <cassert>
+#include <iostream>
+#include <vector>
 #include "../misc/bit_ops.hpp"
 template<int lg>
 class wavelet

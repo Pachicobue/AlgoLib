@@ -1,8 +1,6 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <numeric>
-#    include <vector>
-#endif
+#include <numeric>
+#include <vector>
 template<typename T>
 std::vector<bool> seg_sieve(const T l, const T r, const std::vector<T>& ps)
 {

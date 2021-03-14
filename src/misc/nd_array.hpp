@@ -1,7 +1,5 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <vector>
-#endif
+#include <vector>
 template<typename T, int n, int i = 0>
 auto nd_array(int const (&szs)[n], const T x = T{})
 {

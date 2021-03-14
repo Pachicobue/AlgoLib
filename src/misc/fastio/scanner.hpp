@@ -1,11 +1,9 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <algorithm>
-#    include <cstdio>
-#    include <cstring>
-#    include <tuple>
-#    include <vector>
-#endif
+#include <algorithm>
+#include <cstdio>
+#include <cstring>
+#include <tuple>
+#include <vector>
 class scanner
 {
 public:

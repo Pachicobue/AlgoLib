@@ -1,10 +1,8 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <bitset>
-#    include <cassert>
-#    include <iostream>
-#    include <vector>
-#endif
+#include <bitset>
+#include <cassert>
+#include <iostream>
+#include <vector>
 template<int column>
 class bit_matrix
 {
@@ -40,7 +38,8 @@ public:
         }
         return ans;
     }
-    friend bit_matrix operator^(const bit_matrix& m, const unsigned long long n) { return assert(m.row == m.column), n == 0 ? bit_matrix::id(m.row) : n % 2 == 1 ? m*(m ^ (n - 1)) : ((m * m) ^ (n / 2)); }
+    friend bit_matrix operator^(const bit_matrix& m, const unsigned long long n) { return assert(m.row == m.column), n == 0 ? bit_matrix::id(m.row) : n % 2 == 1 ? m*(m ^ (n - 1))
+                                                                                                                                                                 : ((m * m) ^ (n / 2)); }
     friend bit_matrix& operator^=(bit_matrix& m1, const bit_matrix& m2)
     {
         assert(m1.row == m2.row), assert(m1.column == m2.column);

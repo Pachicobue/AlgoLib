@@ -1,9 +1,7 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <iomanip>
-#    include <iostream>
-#    include <vector>
-#endif
+#include <iomanip>
+#include <iostream>
+#include <vector>
 class printer
 {
 public:

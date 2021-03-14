@@ -1,10 +1,8 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <algorithm>
-#    include <cassert>
-#    include <cmath>
-#    include <vector>
-#endif
+#include <algorithm>
+#include <cassert>
+#include <cmath>
+#include <vector>
 template<typename T>
 class prime_count
 {

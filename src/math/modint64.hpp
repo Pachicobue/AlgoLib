@@ -1,8 +1,6 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <iostream>
-#    include <vector>
-#endif
+#include <iostream>
+#include <vector>
 #include "../misc/types.hpp"
 struct modinfo64
 {

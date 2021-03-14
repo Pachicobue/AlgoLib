@@ -1,11 +1,8 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <cassert>
-#    include <cmath>
-#    include <iostream>
-#    include <numeric>
-#endif
-
+#include <cassert>
+#include <cmath>
+#include <iostream>
+#include <numeric>
 template<typename T>
 struct rational
 {

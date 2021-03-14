@@ -1,9 +1,7 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <iostream>
-#    include <tuple>
-#    include <vector>
-#endif
+#include <iostream>
+#include <tuple>
+#include <vector>
 class scanner
 {
 public:

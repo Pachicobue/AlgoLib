@@ -1,8 +1,6 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <array>
-#    include <iostream>
-#endif
+#include <array>
+#include <iostream>
 template<typename T, int row, int column>
 class array_matrix
 {
@@ -76,7 +74,8 @@ public:
         return ans;
     }
     friend array_matrix operator*(const T& t, const array_matrix& m) { return m * t; }
-    friend array_matrix operator^(const array_matrix& m, const unsigned long long n) { return n == 0 ? array_matrix::I() : n % 2 == 1 ? m * (m ^ (n - 1)) : ((m * m) ^ (n / 2)); }
+    friend array_matrix operator^(const array_matrix& m, const unsigned long long n) { return n == 0 ? array_matrix::I() : n % 2 == 1 ? m * (m ^ (n - 1))
+                                                                                                                                      : ((m * m) ^ (n / 2)); }
     friend array_matrix& operator+=(array_matrix& m1, const array_matrix& m2)
     {
         for (int i = 0; i < row; i++) {

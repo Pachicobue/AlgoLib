@@ -1,8 +1,6 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <map>
-#    include <vector>
-#endif
+#include <map>
+#include <vector>
 template<typename T>
 class zipper
 {

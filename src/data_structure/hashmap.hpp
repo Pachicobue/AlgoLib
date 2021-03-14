@@ -1,8 +1,6 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <array>
-#    include <bitset>
-#endif
+#include <array>
+#include <bitset>
 #include "../misc/types.hpp"
 
 template<typename K, typename V, int LG = 20>

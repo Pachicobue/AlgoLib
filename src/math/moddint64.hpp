@@ -1,8 +1,6 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <cassert>
-#    include <iostream>
-#endif
+#include <cassert>
+#include <iostream>
 #include "../misc/types.hpp"
 struct moddinfo64
 {

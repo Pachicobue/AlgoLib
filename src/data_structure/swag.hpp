@@ -1,9 +1,7 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <algorithm>
-#    include <iostream>
-#    include <vector>
-#endif
+#include <algorithm>
+#include <iostream>
+#include <vector>
 template<typename SemiGroup>
 class swag
 {
@@ -39,7 +37,8 @@ public:
             m_fronts.pop_back(), m_Fronts.pop_back();
         }
     }
-    T fold() const { return m_fronts.empty() ? m_Backs.back() : m_backs.empty() ? m_Fronts.back() : m_merge(m_Fronts.back(), m_Backs.back()); }
+    T fold() const { return m_fronts.empty() ? m_Backs.back() : m_backs.empty() ? m_Fronts.back()
+                                                                                : m_merge(m_Fronts.back(), m_Backs.back()); }
     friend std::ostream& operator<<(std::ostream& os, const swag& sw)
     {
         std::vector<T> as = sw.fs;

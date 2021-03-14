@@ -1,7 +1,5 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <limits>
-#endif
+#include <limits>
 #include "../misc/constants.hpp"
 #include "graph.hpp"
 template<typename T>

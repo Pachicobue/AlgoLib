@@ -1,7 +1,5 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <algorithm>
-#endif
+#include <algorithm>
 #include "graph.hpp"
 template<typename T>
 std::pair<bool, std::vector<int>> top_sort(const graph<T>& g)
