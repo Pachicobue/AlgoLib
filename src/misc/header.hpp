@@ -1,5 +1,4 @@
 #pragma once
-#include <bits/stdc++.h>
 #include "bit_ops.hpp"
 #include "chmin.hpp"
 #include "constants.hpp"

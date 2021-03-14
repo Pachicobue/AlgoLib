@@ -1,0 +1,4 @@
+[[languages.cpp.environments]]
+bundle = "false"
+CXX = "clang++"
+CXXFLAGS = ["-I", "src", "-Wall", "-Wextra", "-Wshadow", "-std=c++17", "-O2"]
