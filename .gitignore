@@ -1,3 +1,13 @@
+# ccls
+.ccls-cache
+
+# verification-helper
+**/.verify-helper/cache
+md-output
+
+# Submission
+**/*_submission.cpp
+
 # Prerequisites
 *.d
 
