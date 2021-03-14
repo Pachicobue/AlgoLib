@@ -40,6 +40,8 @@ def create_dummy_headers():
             if match:
                 name = match[1]
                 Path.touch(dummy_include_path / name)
+                with open(dummy_include_path / name, mode='w') as f2:
+                    f2.write('#pragma INCLUDE <{}>'.format(name))
 
     bits_extcpp = bits_include_path / 'extc++.h'
     with open(bits_extcpp) as f:
@@ -48,6 +50,23 @@ def create_dummy_headers():
             if match:
                 name = match[1]
                 Path.touch(dummy_include_path / name)
+                with open(dummy_include_path / name, mode='w') as f2:
+                    f2.write('#pragma INCLUDE <{}>'.format(name))
+
+
+def beautify(str):
+    headers = set()
+    include_pattern = re.compile('#pragma INCLUDE <(.*)>')
+    output = ''
+    for line in str.splitlines():
+        if re.match('^\s*$', line):
+            continue
+        match = include_pattern.match(line)
+        if match:
+            headers.add('#include <{}>'.format(match[1]))
+        else:
+            output += line + '\n'
+    return '\n'.join(headers) + '\n' + output
 
 
 def expand(args):
@@ -63,11 +82,13 @@ def expand(args):
     source_file_directory = source_file_path.parent
     output_file_path = source_file_path.with_name(
         source_file_path.stem + '_submission' + source_file_path.suffix)
+    tmp_file_path = source_file_path.with_name(
+        source_file_path.stem + '_tmp' + source_file_path.suffix)
     logger.info('source_file_path: {}'.format(source_file_path))
     logger.info('output_file_path: {}'.format(output_file_path))
 
     dummy_include_path = Path(__file__).resolve().parent / 'dummy_headers'
-    commands = ['g++', str(source_file_path), '-o', output_file_path, '-std=c++17',
+    commands = ['g++', str(source_file_path), '-o', tmp_file_path, '-std=c++17',
                 '-E', '-P', '-I', dummy_include_path]  # type: List[str]
     for macro in defined_macros:
         commands.append('-D')
@@ -76,11 +97,12 @@ def expand(args):
         commands.append('-I')
         commands.append(str(directory))
     subprocess.run(commands, cwd=source_file_directory)
-    output = "#include <bits/stdc++.h>\n" + open(str(output_file_path)).read()
-    output = '\n'.join(filter(lambda x: x.strip(), output.split('\n')))
-    logger.debug('output: {}'.format(output))
 
-    with open(str(output_file_path), 'w') as f:
+    output = beautify(open(str(tmp_file_path)).read())
+    logger.debug('output: {}'.format(output))
+    tmp_file_path.unlink()
+
+    with open(str(output_file_path), mode='w') as f:
         f.write(output)
     if args.clipboard:
         pyperclip.copy(output)
