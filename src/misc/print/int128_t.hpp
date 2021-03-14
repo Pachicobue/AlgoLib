@@ -1,9 +1,7 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <algorithm>
-#    include <iostream>
-#    include <string>
-#endif
+#include <algorithm>
+#include <iostream>
+#include <string>
 std::ostream& operator<<(std::ostream& os, __int128_t v)
 {
     bool minus = false;

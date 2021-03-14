@@ -1,8 +1,6 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <numeric>
-#    include <vector>
-#endif
+#include <numeric>
+#include <vector>
 #include "../misc/types.hpp"
 std::vector<u32> factor_table(const u32 sup)
 {

@@ -1,7 +1,5 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <cmath>
-#endif
+#include <cmath>
 
 #include "../data_structure/hashmap.hpp"
 #include "../misc/types.hpp"

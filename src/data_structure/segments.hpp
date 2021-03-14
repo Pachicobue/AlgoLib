@@ -1,8 +1,6 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <algorithm>
-#    include <vector>
-#endif
+#include <algorithm>
+#include <vector>
 #include "../misc/bit_ops.hpp"
 class segments
 {

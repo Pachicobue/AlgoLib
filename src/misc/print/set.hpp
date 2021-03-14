@@ -1,8 +1,6 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <iostream>
-#    include <set>
-#endif
+#include <iostream>
+#include <set>
 template<typename T, typename C, typename A>
 std::ostream& operator<<(std::ostream& os, const std::set<T, C, A>& v)
 {

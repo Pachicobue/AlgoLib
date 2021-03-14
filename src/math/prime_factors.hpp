@@ -1,8 +1,6 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <map>
-#    include <numeric>
-#endif
+#include <map>
+#include <numeric>
 #include "../misc/random.hpp"
 #include "../misc/types.hpp"
 #include "is_prime.hpp"

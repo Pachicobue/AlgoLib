@@ -1,8 +1,6 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <cassert>
-#    include <cmath>
-#endif
+#include <cassert>
+#include <cmath>
 class range
 {
 private:

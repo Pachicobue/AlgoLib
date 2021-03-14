@@ -1,8 +1,6 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <string>
-#    include <vector>
-#endif
+#include <string>
+#include <vector>
 template<typename InIt>
 std::vector<int> sa_is(const InIt first, const InIt last, int bucket_size = (1UL << 8))
 {

@@ -1,7 +1,5 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <vector>
-#endif
+#include <vector>
 #include "../misc/bit_ops.hpp"
 template<typename T>
 std::vector<T> set_zeta(const std::vector<T>& xs, const bool subset)

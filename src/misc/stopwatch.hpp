@@ -1,8 +1,6 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <algorithm>
-#    include <chrono>
-#endif
+#include <algorithm>
+#include <chrono>
 class stopwatch
 {
 public:

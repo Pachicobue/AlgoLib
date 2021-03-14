@@ -1,10 +1,8 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <algorithm>
-#    include <cassert>
-#    include <numeric>
-#    include <vector>
-#endif
+#include <algorithm>
+#include <cassert>
+#include <numeric>
+#include <vector>
 #include "../misc/types.hpp"
 template<int block_size>
 class mo_iterator

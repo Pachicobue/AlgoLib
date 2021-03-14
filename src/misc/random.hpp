@@ -1,9 +1,7 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <algorithm>
-#    include <limits>
-#    include <random>
-#endif
+#include <algorithm>
+#include <limits>
+#include <random>
 
 #include "bit_ops.hpp"
 template<typename Rng>

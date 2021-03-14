@@ -1,7 +1,5 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <queue>
-#endif
+#include <queue>
 using i32  = int;
 using u32  = unsigned int;
 using i64  = long long;

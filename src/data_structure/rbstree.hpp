@@ -1,7 +1,5 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <vector>
-#endif
+#include <vector>
 
 template<typename T>
 class rbstree

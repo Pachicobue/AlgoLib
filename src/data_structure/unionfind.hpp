@@ -1,10 +1,8 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <cassert>
-#    include <iostream>
-#    include <numeric>
-#    include <vector>
-#endif
+#include <cassert>
+#include <iostream>
+#include <numeric>
+#include <vector>
 class unionfind
 {
 public:

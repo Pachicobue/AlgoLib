@@ -1,7 +1,5 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <numeric>
-#endif
+#include <numeric>
 #include "fps.hpp"
 template<typename mint>
 fps<mint> lagrange_interpolate(const std::vector<mint> ys)

@@ -1,9 +1,7 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <cassert>
-#    include <iostream>
-#    include <vector>
-#endif
+#include <cassert>
+#include <iostream>
+#include <vector>
 template<typename T>
 class static_rsq
 {

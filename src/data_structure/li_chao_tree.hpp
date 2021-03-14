@@ -1,10 +1,8 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <iostream>
-#    include <limits>
-#    include <tuple>
-#    include <vector>
-#endif
+#include <iostream>
+#include <limits>
+#include <tuple>
+#include <vector>
 template<typename T, typename V = T>
 class li_chao_tree
 {

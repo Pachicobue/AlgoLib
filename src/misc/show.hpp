@@ -1,8 +1,6 @@
 #pragma once
 #ifdef HOGEPACHI
-#    ifndef WITHOUT_STANDARD_LIBRARY
-#        include <iostream>
-#    endif
+#    include <iostream>
 #    include "print/array.hpp"
 #    include "print/deque.hpp"
 #    include "print/int128_t.hpp"

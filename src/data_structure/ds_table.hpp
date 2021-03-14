@@ -1,8 +1,6 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <cassert>
-#    include <vector>
-#endif
+#include <cassert>
+#include <vector>
 #include "../misc/bit_ops.hpp"
 template<typename SemiGroup>
 class ds_table

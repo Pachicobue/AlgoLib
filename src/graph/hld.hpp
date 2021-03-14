@@ -1,8 +1,6 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <algorithm>
-#    include <iostream>
-#endif
+#include <algorithm>
+#include <iostream>
 #include "graph.hpp"
 template<typename T>
 class hl_decomp

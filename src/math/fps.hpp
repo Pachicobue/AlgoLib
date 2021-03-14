@@ -1,9 +1,7 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <algorithm>
-#    include <cassert>
-#    include <vector>
-#endif
+#include <algorithm>
+#include <cassert>
+#include <vector>
 #include "../misc/bit_ops.hpp"
 #include "../misc/range.hpp"
 #include "modint.hpp"

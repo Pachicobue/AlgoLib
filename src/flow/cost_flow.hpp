@@ -1,11 +1,9 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <algorithm>
-#    include <cassert>
-#    include <iostream>
-#    include <queue>
-#    include <vector>
-#endif
+#include <algorithm>
+#include <cassert>
+#include <iostream>
+#include <queue>
+#include <vector>
 #include "../misc/constants.hpp"
 template<typename Cap, typename Cost>
 struct cost_flow

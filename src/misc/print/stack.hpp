@@ -1,8 +1,6 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <iostream>
-#    include <stack>
-#endif
+#include <iostream>
+#include <stack>
 template<typename T1, typename T2>
 std::ostream& operator<<(std::ostream& os, const std::stack<T1>& v)
 {

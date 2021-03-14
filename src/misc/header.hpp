@@ -1,7 +1,5 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <bits/stdc++.h>
-#endif
+#include <bits/stdc++.h>
 #include "bit_ops.hpp"
 #include "chmin.hpp"
 #include "constants.hpp"

@@ -1,8 +1,6 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <deque>
-#    include <iostream>
-#endif
+#include <deque>
+#include <iostream>
 template<typename T, typename A>
 std::ostream& operator<<(std::ostream& os, const std::deque<T, A>& v)
 {

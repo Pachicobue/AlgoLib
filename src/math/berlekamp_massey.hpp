@@ -1,8 +1,6 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <algorithm>
-#    include <vector>
-#endif
+#include <algorithm>
+#include <vector>
 template<typename T>
 std::vector<T> berlekamp_massey(const std::vector<T>& A)
 {

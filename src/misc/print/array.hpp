@@ -1,8 +1,6 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <array>
-#    include <iostream>
-#endif
+#include <array>
+#include <iostream>
 template<typename T, std::size_t N>
 std::ostream& operator<<(std::ostream& os, const std::array<T, N>& v)
 {

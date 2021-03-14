@@ -1,10 +1,8 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <array>
-#    include <cassert>
-#    include <cmath>
-#    include <vector>
-#endif
+#include <array>
+#include <cassert>
+#include <cmath>
+#include <vector>
 #include "../misc/types.hpp"
 template<typename T>
 class prime_powsum

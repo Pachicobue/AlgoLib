@@ -1,7 +1,5 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <vector>
-#endif
+#include <vector>
 #include "../misc/random.hpp"
 #include "../misc/types.hpp"
 class rolling_hash

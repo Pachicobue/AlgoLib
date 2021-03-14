@@ -1,10 +1,8 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <cstdio>
-#    include <cstring>
-#    include <string>
-#    include <vector>
-#endif
+#include <cstdio>
+#include <cstring>
+#include <string>
+#include <vector>
 class printer
 {
 public:
@@ -30,17 +28,24 @@ private:
                    ? x < TEN(5)
                          ? x < TEN(2)
                                ? x < TEN(1) ? 1 : 2
-                               : x < TEN(3) ? 3 : x < TEN(4) ? 4 : 5
-                         : x < TEN(7)
-                               ? x < TEN(6) ? 6 : 7
-                               : x < TEN(8) ? 8 : x < TEN(9) ? 9 : 10
-                   : x < TEN(14)
-                         ? x < TEN(12)
-                               ? x < TEN(11) ? 11 : 12
-                               : x < TEN(13) ? 13 : 14
-                         : x < TEN(16)
-                               ? x < TEN(15) ? 15 : 16
-                               : x < TEN(17) ? 17 : x < TEN(18) ? 18 : 19;
+                           : x < TEN(3) ? 3
+                           : x < TEN(4) ? 4
+                                        : 5
+                     : x < TEN(7)
+                         ? x < TEN(6) ? 6 : 7
+                     : x < TEN(8) ? 8
+                     : x < TEN(9) ? 9
+                                  : 10
+               : x < TEN(14)
+                   ? x < TEN(12)
+                         ? x < TEN(11) ? 11 : 12
+                     : x < TEN(13) ? 13
+                                   : 14
+               : x < TEN(16)
+                   ? x < TEN(15) ? 15 : 16
+               : x < TEN(17) ? 17
+               : x < TEN(18) ? 18
+                             : 19;
     }
     void dump(const char* s) { dump(std::string{s}); }
     void dump(const std::string& s)

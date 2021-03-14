@@ -1,8 +1,6 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <iostream>
-#    include <map>
-#endif
+#include <iostream>
+#include <map>
 template<typename K, typename T, typename C, typename A>
 std::ostream& operator<<(std::ostream& os, const std::multimap<K, T, C, A>& v)
 {

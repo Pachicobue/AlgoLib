@@ -1,9 +1,7 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <cassert>
-#    include <deque>
-#    include <limits>
-#endif
+#include <cassert>
+#include <deque>
+#include <limits>
 template<typename T, typename V = T>
 class monotonic_cht
 {

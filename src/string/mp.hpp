@@ -1,8 +1,6 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <string>
-#    include <vector>
-#endif
+#include <string>
+#include <vector>
 template<typename InIt>
 std::vector<int> mp(const InIt first, const InIt last)
 {

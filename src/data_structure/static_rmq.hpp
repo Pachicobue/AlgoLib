@@ -1,10 +1,8 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <algorithm>
-#    include <cassert>
-#    include <functional>
-#    include <stack>
-#endif
+#include <algorithm>
+#include <cassert>
+#include <functional>
+#include <stack>
 #include "../misc/bit_ops.hpp"
 #include "ds_table.hpp"
 template<typename TotalOrd, typename B = ull>

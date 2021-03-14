@@ -1,9 +1,7 @@
 #pragma once
-#ifndef WITHOUT_STANDARD_LIBRARY
-#    include <cassert>
-#    include <iostream>
-#    include <vector>
-#endif
+#include <cassert>
+#include <iostream>
+#include <vector>
 template<typename T>
 class matrix
 {
@@ -76,7 +74,8 @@ public:
         return ans;
     }
     friend matrix operator*(const T& t, const matrix& m) { return m * t; }
-    friend matrix operator^(const matrix& m, const unsigned long long n) { return assert(m.row == m.column), n == 0 ? matrix::I(m.row) : n % 2 == 1 ? m*(m ^ (n - 1)) : ((m * m) ^ (n / 2)); }
+    friend matrix operator^(const matrix& m, const unsigned long long n) { return assert(m.row == m.column), n == 0 ? matrix::I(m.row) : n % 2 == 1 ? m*(m ^ (n - 1))
+                                                                                                                                                    : ((m * m) ^ (n / 2)); }
     friend matrix& operator+=(matrix& m1, const matrix& m2)
     {
         assert(m1.row == m2.row), assert(m1.column == m2.column);
